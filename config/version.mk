@@ -1,4 +1,4 @@
-PRODUCT_VERSION_MAJOR = 23
+PRODUCT_VERSION_MAJOR = 16
 PRODUCT_VERSION_MINOR = 2
 
 ifeq ($(LINEAGE_VERSION_APPEND_TIME_OF_DAY),true)
@@ -37,9 +37,8 @@ LINEAGE_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(LINEAGE_V
 # Display version
 LINEAGE_DISPLAY_VERSION := $(PRODUCT_VERSION_MAJOR)-$(LINEAGE_VERSION_SUFFIX)
 
-# LineageOS version properties
+# TelegramOS version properties
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.lineage.version=$(LINEAGE_VERSION) \
-    ro.lineage.display.version=$(LINEAGE_DISPLAY_VERSION) \
-    ro.lineage.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
-    ro.lineage.releasetype=$(LINEAGE_BUILDTYPE)
+    ro.telegramost.version=$(LINEAGE_VERSION) \
+    ro.telegramost.display.version=$(LINEAGE_DISPLAY_VERSION) \
+    ro.telegramost.releasetype=$(LINEAGE_BUILDTYPE)
